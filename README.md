@@ -31,14 +31,10 @@ This repository summarizes the key ideas and principles from "Clean Code in Java
   <summary>Meaningful abstractions</summary>
   
 - Abstraction simplifies complexity by presenting it in a more understandable form. In coding, abstractions allow us to manage complexity without needing to grasp all underlying details. The key is that every line of code involves using, creating, or communicating abstractions.
-
   ![Screenshot_1](https://github.com/user-attachments/assets/4909a76c-53fc-4e42-854d-11d45ab8a3a0)
 
-
-  <summary>The Tower of Abstraction</summary>
   
 - The tower of abstraction represents the layers of complexity in technology, from hardware at the base to high-level interfaces at the top. Each layer abstracts complexity for the layer above. When writing code, we're adding to this tower, with users either being other developers or end-users who interact with the simplified interfaces we've built. 
-
  ![Screenshot_2](https://github.com/user-attachments/assets/5520edc6-e8b8-4131-95fa-8dc58d5ce3c0)
 
 </details>
@@ -47,4 +43,81 @@ This repository summarizes the key ideas and principles from "Clean Code in Java
   <summary>Key Principles</summary>
 - Code should be readable, understandable, and maintainable.
 - Avoid unnecessary complexity and always aim for simplicity in structure and logic.
+</details>
+
+
+### Chapter 2: The Tenets of Clean Code
+
+<details> 
+  <summary>Readability and Simplicity</summary>
+  
+- Readable code is paramount. It should be easy for others (or your future self) to understand the intent of the code without extensive comments or documentation.
+
+- Simple solutions to problems are often the best, avoiding unnecessary abstraction and complexity.
+
+1. **Correct**: The code performs its intended function accurately.
+2. **Stable**: It consistently behaves as expected under various conditions.
+3. **Resilient**: It gracefully handles errors and unexpected situations.
+
+#### Example
+
+```javascript
+// Instead of this:
+  const r = (x, y) => Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2)); 
+
+// Write this:
+  function calculateHypotenuse(x, y) {
+    return Math.sqrt(x * x + y * y);
+}
+```
+  
+</details> 
+
+<details>
+  <summary>Correctness</summary>
+  
+  Correct code meets predefined expectations and requirements.
+
+  ### Establishing Correctness
+
+1. **Understand Requirements**
+  - Requirements should guide how the code should behave
+
+2. **Handle Edge Cases**:
+   - Recognize and manage special scenarios and edge cases.
+
+3. **Use Existing Libraries**:
+   - Prefer using well-tested open-source libraries for common tasks. 
+
+4. **Test Thoroughly**:
+   - Develop comprehensive tests to ensure your code meets all requirements and handles various scenarios effectively.
+  
+</details>
+
+<details>
+  <summary>Efficiency, Time and Space </summary>
+
+  Efficiency in software development focuses on optimizing resource use—time, space, and performance—while minimizing waste. Key aspects include:
+
+- Performance: Enhancing execution speed.
+- Resource Use: Reducing memory and CPU consumption.
+- Economy: Designing cost-effective code.
+- Ecology: Lowering environmental impact.
+
+#### Time Optimization
+  Efficient time management ensures faster performance and better user experience by:
+
+- Reducing execution time.
+- Optimizing CPU usage.
+- Enhancing responsiveness through techniques like asynchronous programming.
+  
+#### Space Optimization  
+  Effective space management minimizes data size and improves performance by:
+
+- Optimizing memory usage.
+- Reducing data duplication.
+- Efficiently managing bandwidth.
+
+Balancing these factors leads to software that is not only effective but also environmentally and user-friendly.
+
 </details>
