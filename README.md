@@ -260,11 +260,11 @@ Choosing a good name is subjective and depends on the context, experience, and l
 
 - **Contract:** Expectations about its behavior. A good name sets expectations about its usage:
 
-- Boolean variables prefixed with is.
+1. Boolean variables prefixed with is.
 
-- Constants in uppercase.
+2. Constants in uppercase.
 
-- Plural names indicate collections.
+3. Plural names indicate collections.
 
 </details>
 
