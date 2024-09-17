@@ -80,7 +80,7 @@ This repository summarizes the key ideas and principles from "Clean Code in Java
 
   ### Establishing Correctness
 
-1. **Understand Requirements**
+1. **Understand Requirements**;
   - Requirements should guide how the code should behave
 
 2. **Handle Edge Cases**:
