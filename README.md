@@ -224,3 +224,181 @@ Intuitive design aims to create user interfaces that are easy to understand and 
 
   </details>
 
+### Chapter 4: Naming Things Is Hard
+
+<details>
+  <summary>What's in a Name?</summary>
+  
+Choosing a good name is subjective and depends on the context, experience, and language. Good names should reflect:
+
+- **Purpose:** 
+  A well-chosen name clearly indicates the purpose of a function, variable, or class. Names should be self-evident within their context, avoiding unnecessary comments.
+
+  #### Example: 
+
+  ```javascript
+    class TenancyAgreement {
+    // Better names communicate purpose effectively
+    documentId; 
+    documentTimestamp;
+}
+  ```
+
+- **Concept:** Good names convey the underlying idea or concept they represent, which is essential for understanding the intent behind the code.
+
+ #### Example: 
+
+  ```javascript
+   const status = {
+      rejectedDeal,
+      acceptedDeal,
+      pendingDeal,
+      stalledDeal
+};
+  ```
+
+
+- **Contract:** Expectations about its behavior. A good name sets expectations about its usage:
+
+- Boolean variables prefixed with is.
+
+- Constants in uppercase.
+
+- Plural names indicate collections.
+
+</details>
+
+<details>
+  <summary>Naming Anti-Patterns</summary>
+
+Avoid common naming pitfalls:
+
+1. **Needlessly Short Names**
+
+Short names often obscure intent and rely on specific knowledge.
+
+#### Example: 
+
+  ```javascript
+  //Bad Namning:
+
+   function incId(id, f) {
+    for (let x = 0; x < ids.length; ++x) {
+        if (ids[x].id === id && f(ids[x])) {
+            ids[x].n++;
+        }
+    }
+}
+
+
+//Good Naming:
+
+function incrementJobInstancesByIdIfFilter(id, filter) {
+    for (let i = 0; i < jobs.length; i++) {
+        let job = jobs[i];
+        if (job.id === id && filter(job)) {
+            job.nInstances++;
+        }
+    }
+}
+  ```
+
+  2. **Needlessly Exotic Names**
+
+Exotic names can confuse the reader.
+
+#### Example: 
+
+  ```javascript
+  //Bad Namning:
+
+  function deStylizeParameters(params) {
+    disEntangleParams(params, p => !!p.style).obliterate();
+}
+
+//Good Naming:
+
+function removeStylingFromParams(params) {
+    filterParams(params, param => !!param.style).remove();
+}
+  ```
+
+3. **Needlessly Long Names**
+
+Long names can indicate confusion and complexity.
+
+#### Example: 
+
+  ```javascript
+  //Bad Namning:
+
+documentManager.refreshAndSaveSignedAndNonPendingDocuments();
+
+//Good Naming:
+
+documentManager.refreshSignedDocuments();
+documentManager.refreshNonPendingDocuments();
+documentManager.saveSignedDocuments();
+documentManager.saveNonPendingDocuments();
+
+  ```
+
+</details>
+
+
+<details>
+<summary>Hungarian Notation</summary>
+
+Hungarian Notation involves prefixing variable names with type information, which can be useful but also has its disadvantages in JavaScript.
+
+#### Example: 
+
+  ```javascript
+  function renderArticle(name) {
+    const article = Article.getByName(name);
+    const title = article.getTitle();
+    const strArticle = article.toString();
+    // ...
+}
+
+  ```
+</details>
+
+<details>
+<summary>Naming and Abstracting Functions</summary>
+
+Function names should be imperative, avoiding over-qualification.
+
+#### Example: 
+
+  ```javascript
+  function findBicycle({ color, frontWheel }) {
+    // Implementation
+}
+
+
+  ```
+</details>
+
+<details>
+<summary>Three Bad Names Approach</summary>
+
+To overcome naming challenges, generate three imperfect names and refine from there.
+
+#### Example: 
+
+  ```javascript
+ // Generate three bad names
+// 1. matchUsernameAgainstForbiddenWords
+// 2. checkForForbiddenWordConflicts
+// 3. isUsernameReservedWord
+
+// Refine to a suitable name
+let finalName = isUsernameForbiddenWord;
+
+  ```
+This technique facilitates brainstorming and leads to clearer names.
+
+</details>
+
+
