@@ -80,16 +80,16 @@ This repository summarizes the key ideas and principles from "Clean Code in Java
 
   ### Establishing Correctness
 
-1. **Understand Requirements**;
-  - Requirements should guide how the code should behave
+1. **Understand Requirements**:
+   - Requirements should guide how the code should behave.
 
-2. **Handle Edge Cases**:
+3. **Handle Edge Cases**:
    - Recognize and manage special scenarios and edge cases.
 
-3. **Use Existing Libraries**:
+4. **Use Existing Libraries**:
    - Prefer using well-tested open-source libraries for common tasks. 
 
-4. **Test Thoroughly**:
+5. **Test Thoroughly**:
    - Develop comprehensive tests to ensure your code meets all requirements and handles various scenarios effectively.
   
 </details>
