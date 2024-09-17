@@ -31,12 +31,14 @@ This repository summarizes the key ideas and principles from "Clean Code in Java
   <summary>Meaningful abstractions</summary>
   
 - Abstraction simplifies complexity by presenting it in a more understandable form. In coding, abstractions allow us to manage complexity without needing to grasp all underlying details. The key is that every line of code involves using, creating, or communicating abstractions.
+
   ![Screenshot_1](https://github.com/user-attachments/assets/4909a76c-53fc-4e42-854d-11d45ab8a3a0)
 
 
   <summary>The Tower of Abstraction</summary>
   
 - The tower of abstraction represents the layers of complexity in technology, from hardware at the base to high-level interfaces at the top. Each layer abstracts complexity for the layer above. When writing code, we're adding to this tower, with users either being other developers or end-users who interact with the simplified interfaces we've built. 
+
  ![Screenshot_2](https://github.com/user-attachments/assets/5520edc6-e8b8-4131-95fa-8dc58d5ce3c0)
 
 </details>
