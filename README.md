@@ -241,7 +241,7 @@ Choosing a good name is subjective and depends on the context, experience, and l
     // Better names communicate purpose effectively
     documentId; 
     documentTimestamp;
-}
+  }
   ```
 
 - **Concept:** Good names convey the underlying idea or concept they represent, which is essential for understanding the intent behind the code.
