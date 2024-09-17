@@ -121,3 +121,51 @@ This repository summarizes the key ideas and principles from "Clean Code in Java
 Balancing these factors leads to software that is not only effective but also environmentally and user-friendly.
 
 </details>
+
+<details>
+  <summary>User Stories</summary>
+  
+ User stories articulate system requirements from the user's perspective, commonly used in Agile methodologies like Scrum(breaks work into smaller parts, iterative development, delivering high value).
+
+### Structure 
+
+- **Person**:The user role benefiting from the feature.
+- **Want**:  The desired functionality.
+- **Purpose**: The benefit of the feature for the user.
+
+### Examples
+
+- **Add Contact**:
+- **Delete Contact**:
+- **Find Contact**:
+
+### Benefits of User Stories
+
+1. **User Focus**: Clarifies requirements based on user needs. 
+2. **Development Guidance**: Provides clear goals for prioritization.
+3. **Usability**:  Helps create intuitive solutions.
+
+</details>
+
+<details>
+  <summary>Intuitive Design</summary>
+  
+Intuitive design aims to create user interfaces that are easy to understand and use without extensive cognitive effort.
+
+### Principles 
+
+1. **Consistency**: Use familiar patterns to reduce learning curves.
+
+2. **Clarity**: Design elements should clearly convey their functions.
+
+3. **Feedback**: Provide immediate responses to user actions.
+
+### Examples
+
+- Common icons (e.g., "X" for close).
+
+- Naming conventions (e.g., Boolean functions starting with "is"). (e.g., `isValid`, `isCompleted`). it helps users quickly understand the return type.
+
+- Color coding (e.g., green for success, red for errors).
+
+</details>
