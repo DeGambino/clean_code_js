@@ -3128,7 +3128,7 @@ This function is used to limit the rate at which a specific function can be call
 
 -  Sometimes documentation needs to be accessible to `non-technical` users, such as stakeholders, product managers, or users reading user guides. In these cases, avoid technical jargon and use plain, simple language.
 
-####Example: 
+###Example: 
 
 ### User Guide for Search Feature
 
@@ -3189,7 +3189,7 @@ function registerUser(userData) {
 - To understand complex code, visual aids like flowcharts can be extremely helpful. They allow you to map out the logical flow, showing how data moves through functions and how modules interact.
 - A flowchart provides a clear view of dependencies and can highlight potential problem areas or gaps in the logic.
 
-####Example:
+###Example:
 
 - Create a flowchart of a user login process:
 
@@ -3218,7 +3218,7 @@ function registerUser(userData) {
 
 - Refactor only when you’re confident the code is stable and the impact of the changes is well understood.
 
-####Example: 
+###Example: 
   - Instead of rewriting the entire registerUser function, add a simple validation check to improve its behavior:
 
   ```javascript
