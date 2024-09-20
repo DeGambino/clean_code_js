@@ -3051,7 +3051,103 @@ By using TypeScript, you ensure that only numbers can be passed to the add funct
 </details>
 
 
+## Section 5: Collaboration and Making Changes
 
+### Chapter 14: Documenting Your Code
+
+
+<details>
+  <summary>Aspects of Clean Documentation</summary>
+
+- Clean documentation is clear, concise, and serves the reader's purpose. It's not just about writing words; it’s about providing the right amount of information in the right format. A well-documented codebase is easier to maintain, debug, and expand.
+
+- Focus on explaining why something exists and how to use it, rather than describing what the code does. The code itself should be clear enough to explain the what.
+
+```javascript 
+
+// Good comment explaining why this function exists
+// This function is used to throttle user input to avoid
+// making API calls too frequently, improving performance.
+function throttle(fn, delay) {
+  let lastCall = 0;
+  return function (...args) {
+    const now = new Date().getTime();
+    if (now - lastCall >= delay) {
+      lastCall = now;
+      return fn(...args);
+    }
+  };
+}
+```
+
+####Bad Example: 
+
+```javascript 
+  // Bad comment explaining what the code does (redundant)
+// This function sets up throttling.
+function throttle(fn, delay) {
+  // Code...
+}
+
+```
+
+</details>
+
+
+<details>
+  <summary>Concept</summary>
+
+- This aspect explains the `big picture` and `context` of the code. For example, what problem the code is solving and why it’s needed. Concepts should provide a broad understanding of how different parts of the system or module work together.
+
+###Example: 
+
+#### Throttle Function Concept
+This function is used to limit the rate at which a specific function can be called. It’s particularly useful for preventing performance issues in situations like continuously triggering API calls from a user’s input.
+
+</details>
+
+
+<details>
+  <summary>Specification</summary>
+
+- Specifications describe how the function or module works in detail. This includes input/output formats, types, exceptions, and constraints. It gives precise technical details to the developer using the code.
+
+</details>
+
+
+<details>
+  <summary>Usability</summary>
+
+- Usability focuses on making the documentation easy to read and navigate. This includes using appropriate headings, examples, formatting, and ensuring the reader can quickly find the information they need. Good usability means organizing content so that both new and experienced developers can easily understand and use it.
+
+</details>
+
+
+<details>
+  <summary>Writing for Non-Technical Audiences</summary>
+
+-  Sometimes documentation needs to be accessible to `non-technical` users, such as stakeholders, product managers, or users reading user guides. In these cases, avoid technical jargon and use plain, simple language.
+
+####Example: 
+
+### User Guide for Search Feature
+
+1. Enter the name of the movie in the search bar.
+2. Click the 'Search' button.
+3. The results will display below, showing all movies that match your search.
+
+
+</details>
+
+
+<details>
+  <summary>General Advice</summary>
+
+- **Be Consistent:** Maintain a consistent style, tone, and structure across your documentation. This helps make it predictable and easier to follow.
+
+- **Write for the Reader:** Tailor your documentation to the intended audience. If you're writing for developers, focus on specifications and examples. If it’s for non-technical users, prioritize clarity and simplicity.
+
+</details>
 
 
 
