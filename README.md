@@ -3266,3 +3266,26 @@ function registerUser(userData) {
 - Pair programming is a great way to collaborate and ensure code quality. It provides a real-time opportunity for feedback and helps share knowledge across the team. 
 
 </details>
+
+
+### Chapter 17: Case Study
+
+<details>
+  <summary>The Problem</summary>
+
+- Every project begins with a clear identification of the problem. In this case study, the problem revolves around creating a simple application that allows users to select plants based on certain criteria.
+
+- The challenge is to design a solution that solves the user’s needs efficiently, considering both technical and user requirements.
+
+</details>
+
+
+<details>
+  <summary>The Design</summary>
+
+-  Once the problem is clear, the next step is to design the solution. This includes outlining the overall architecture, user flow, and deciding on the technology stack.
+
+- A well-thought-out design ensures the application is scalable, maintainable, and easy to understand. Here, designing both the front-end and back-end is crucial.
+
+</details>
+
