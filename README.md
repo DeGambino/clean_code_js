@@ -1,4 +1,4 @@
-# Clean-Code-Handbook
+# Clean Code Handbook
 This repository summarizes the key ideas and principles from "Clean Code in JavaScript" by James Padolsey, offering a quick reference without rereading the entire book.
 
 ## Section 1: What is Clean Code Anyway?
